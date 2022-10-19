@@ -26,8 +26,7 @@ class Solution:
             return -1
         for i in range(min(coins)+1, amount+1):
             memo[i] = self.coinChangeMemo(memo, coins, i)
-            
-        print(memo[amount-20:amount+1])
+           
         if memo[amount] == 10000000:
             return -1
         else:
